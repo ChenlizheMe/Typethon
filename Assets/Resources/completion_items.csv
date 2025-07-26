@@ -1,0 +1,667 @@
+# Python代码补全项配置文件
+# 格式: name,type,description
+# type可以是: keyword, function, constant, module, template, user_defined
+name,type,description
+# Python关键字
+and,keyword,逻辑与操作符
+as,keyword,用于别名
+assert,keyword,断言语句
+async,keyword,异步函数定义
+await,keyword,等待异步操作
+break,keyword,跳出循环
+class,keyword,定义类
+continue,keyword,继续下一次循环
+def,keyword,定义函数
+del,keyword,删除对象
+elif,keyword,else if条件
+else,keyword,否则条件
+except,keyword,异常处理
+finally,keyword,最终执行块
+for,keyword,for循环
+from,keyword,从模块导入
+global,keyword,全局变量声明
+if,keyword,条件语句
+import,keyword,导入模块
+in,keyword,成员检查操作符
+is,keyword,身份检查操作符
+lambda,keyword,匿名函数
+nonlocal,keyword,非局部变量声明
+not,keyword,逻辑非操作符
+or,keyword,逻辑或操作符
+pass,keyword,空语句
+raise,keyword,抛出异常
+return,keyword,返回值
+try,keyword,尝试执行
+while,keyword,while循环
+with,keyword,上下文管理器
+yield,keyword,生成器返回
+False,keyword,布尔值假
+None,keyword,空值
+True,keyword,布尔值真
+# 内置函数
+abs,function,返回数字的绝对值
+all,function,如果所有元素为真则返回True
+any,function,如果任一元素为真则返回True
+ascii,function,返回对象的ASCII字符串表示
+bin,function,转换为二进制字符串
+bool,function,将对象转换为布尔值
+bytearray,function,创建可变字节数组
+bytes,function,创建不可变字节对象
+callable,function,检查对象是否可调用
+chr,function,返回ASCII值对应的字符
+classmethod,function,类方法装饰器
+compile,function,编译源代码
+complex,function,创建复数
+delattr,function,删除对象的属性
+dict,function,字典类型转换
+dir,function,查看对象的属性和方法
+divmod,function,返回商和余数
+enumerate,function,返回枚举对象
+eval,function,计算表达式的值
+exec,function,执行Python代码
+filter,function,过滤序列元素
+float,function,浮点数类型转换
+format,function,格式化值
+frozenset,function,创建不可变集合
+getattr,function,获取对象属性值
+globals,function,返回全局命名空间
+hasattr,function,检查对象是否有属性
+hash,function,返回对象的哈希值
+help,function,获取帮助信息
+hex,function,转换为十六进制字符串
+id,function,返回对象的内存地址
+input,function,获取用户输入
+int,function,整数类型转换
+isinstance,function,检查对象类型
+issubclass,function,检查类继承关系
+iter,function,创建迭代器
+len,function,获取对象的长度
+list,function,列表类型转换
+locals,function,返回本地命名空间
+map,function,对序列应用函数
+max,function,返回最大值
+memoryview,function,创建内存视图对象
+min,function,返回最小值
+next,function,获取迭代器的下一个元素
+object,function,创建基础对象
+oct,function,转换为八进制字符串
+open,function,打开文件
+ord,function,返回字符的ASCII值
+pow,function,幂运算
+print,function,打印输出到控制台
+property,function,属性装饰器
+range,function,生成数字序列
+repr,function,返回对象的字符串表示
+reversed,function,返回反向迭代器
+round,function,四舍五入
+set,function,集合类型转换
+setattr,function,设置对象属性值
+slice,function,创建切片对象
+sorted,function,返回排序后的列表
+staticmethod,function,静态方法装饰器
+str,function,字符串类型转换
+sum,function,对序列求和
+super,function,调用父类方法
+tuple,function,元组类型转换
+type,function,获取对象类型
+vars,function,返回对象的__dict__属性
+zip,function,将多个序列打包
+# 常用模块和方法
+import os,template,导入os模块
+import sys,template,导入sys模块
+import math,template,导入math模块
+import random,template,导入random模块
+import time,template,导入time模块
+import datetime,template,导入datetime模块
+import json,template,导入json模块
+import re,template,导入正则表达式模块
+import collections,template,导入集合模块
+import itertools,template,导入迭代工具模块
+import functools,template,导入函数工具模块
+import pathlib,template,导入路径库模块
+import sqlite3,template,导入SQLite数据库模块
+import requests,template,导入HTTP请求模块
+import numpy,template,导入NumPy数学库
+import pandas,template,导入Pandas数据分析库
+import matplotlib,template,导入Matplotlib绘图库
+from os import path,template,从os导入path模块
+from datetime import datetime,template,从datetime导入datetime类
+from collections import defaultdict,template,从collections导入defaultdict
+from itertools import combinations,template,从itertools导入combinations
+from functools import reduce,template,从functools导入reduce
+# os模块
+os.getcwd,function,获取当前工作目录
+os.chdir,function,更改当前工作目录
+os.listdir,function,列出目录内容
+os.mkdir,function,创建目录
+os.makedirs,function,递归创建目录
+os.remove,function,删除文件
+os.rmdir,function,删除空目录
+os.removedirs,function,递归删除目录
+os.rename,function,重命名文件或目录
+os.path.join,function,连接路径组件
+os.path.exists,function,检查路径是否存在
+os.path.isfile,function,检查是否为文件
+os.path.isdir,function,检查是否为目录
+os.path.basename,function,获取路径的基名
+os.path.dirname,function,获取路径的目录名
+os.path.split,function,分割路径
+os.path.splitext,function,分割文件名和扩展名
+os.path.abspath,function,获取绝对路径
+os.path.realpath,function,获取真实路径
+os.path.getsize,function,获取文件大小
+os.environ,constant,环境变量字典
+# sys模块
+sys.argv,constant,命令行参数列表
+sys.exit,function,退出程序
+sys.path,constant,模块搜索路径列表
+sys.version,constant,Python版本信息
+sys.platform,constant,平台标识符
+sys.stdin,constant,标准输入流
+sys.stdout,constant,标准输出流
+sys.stderr,constant,标准错误流
+# math模块
+math.pi,constant,圆周率常数
+math.e,constant,自然对数底数
+math.inf,constant,正无穷大
+math.nan,constant,非数字值
+math.sqrt,function,计算平方根
+math.pow,function,幂运算
+math.exp,function,e的x次方
+math.log,function,自然对数
+math.log10,function,以10为底的对数
+math.log2,function,以2为底的对数
+math.sin,function,正弦函数
+math.cos,function,余弦函数
+math.tan,function,正切函数
+math.asin,function,反正弦函数
+math.acos,function,反余弦函数
+math.atan,function,反正切函数
+math.degrees,function,弧度转角度
+math.radians,function,角度转弧度
+math.ceil,function,向上取整
+math.floor,function,向下取整
+math.trunc,function,截断取整
+math.fabs,function,绝对值（浮点数）
+math.factorial,function,阶乘
+math.gcd,function,最大公约数
+math.lcm,function,最小公倍数
+# random模块
+random.random,function,生成0-1之间的随机浮点数
+random.randint,function,生成指定范围的随机整数
+random.randrange,function,从范围中随机选择
+random.choice,function,从序列中随机选择元素
+random.choices,function,从序列中带权重随机选择
+random.sample,function,从总体中随机抽样
+random.shuffle,function,随机打乱序列
+random.uniform,function,生成指定范围的随机浮点数
+random.gauss,function,生成高斯分布随机数
+random.seed,function,设置随机数种子
+# time模块
+time.time,function,获取当前时间戳
+time.sleep,function,程序暂停指定秒数
+time.ctime,function,将时间戳转换为字符串
+time.strftime,function,格式化时间字符串
+time.strptime,function,解析时间字符串
+time.gmtime,function,将时间戳转换为UTC时间元组
+time.localtime,function,将时间戳转换为本地时间元组
+time.mktime,function,将时间元组转换为时间戳
+time.perf_counter,function,高精度性能计时器
+time.process_time,function,进程CPU时间
+# datetime模块
+datetime.datetime,class,日期时间类
+datetime.date,class,日期类
+datetime.time,class,时间类
+datetime.timedelta,class,时间差类
+datetime.timezone,class,时区类
+datetime.now,function,获取当前日期时间
+datetime.today,function,获取今天的日期
+datetime.utcnow,function,获取当前UTC时间
+# json模块
+json.loads,function,解析JSON字符串
+json.dumps,function,将对象转换为JSON字符串
+json.load,function,从文件加载JSON
+json.dump,function,将对象写入JSON文件
+# re模块
+re.match,function,从字符串开头匹配正则表达式
+re.search,function,在字符串中搜索正则表达式
+re.findall,function,查找所有匹配项
+re.finditer,function,查找所有匹配项（迭代器）
+re.sub,function,替换匹配的子字符串
+re.split,function,根据正则表达式分割字符串
+re.compile,function,编译正则表达式
+# collections模块
+collections.Counter,class,计数器类
+collections.defaultdict,class,带默认值的字典
+collections.OrderedDict,class,有序字典
+collections.deque,class,双端队列
+collections.namedtuple,function,命名元组工厂函数
+# itertools模块
+itertools.count,function,无限计数器
+itertools.cycle,function,无限循环迭代器
+itertools.repeat,function,重复元素迭代器
+itertools.chain,function,连接多个迭代器
+itertools.combinations,function,组合迭代器
+itertools.permutations,function,排列迭代器
+itertools.product,function,笛卡尔积迭代器
+itertools.groupby,function,分组迭代器
+# functools模块
+functools.reduce,function,累积函数
+functools.partial,function,偏函数
+functools.wraps,function,函数装饰器工具
+functools.lru_cache,function,LRU缓存装饰器
+functools.singledispatch,function,单分派装饰器
+# 字符串方法
+str.upper,method,转换为大写
+str.lower,method,转换为小写
+str.title,method,转换为标题格式
+str.capitalize,method,首字母大写
+str.strip,method,去除首尾空白字符
+str.lstrip,method,去除左侧空白字符
+str.rstrip,method,去除右侧空白字符
+str.split,method,分割字符串
+str.join,method,连接字符串
+str.replace,method,替换子字符串
+str.find,method,查找子字符串位置
+str.index,method,查找子字符串位置（抛出异常）
+str.count,method,计算子字符串出现次数
+str.startswith,method,检查是否以指定字符串开头
+str.endswith,method,检查是否以指定字符串结尾
+str.isdigit,method,检查是否全为数字
+str.isalpha,method,检查是否全为字母
+str.isalnum,method,检查是否全为字母或数字
+str.isspace,method,检查是否全为空白字符
+str.islower,method,检查是否全为小写
+str.isupper,method,检查是否全为大写
+str.format,method,格式化字符串
+str.zfill,method,用零填充字符串
+# 列表方法
+list.append,method,在列表末尾添加元素
+list.extend,method,扩展列表
+list.insert,method,在指定位置插入元素
+list.remove,method,删除第一个匹配的元素
+list.pop,method,删除并返回指定位置的元素
+list.clear,method,清空列表
+list.index,method,查找元素的索引
+list.count,method,计算元素出现次数
+list.sort,method,对列表进行排序
+list.reverse,method,反转列表
+list.copy,method,创建列表的浅拷贝
+# 字典方法
+dict.get,method,获取键对应的值
+dict.keys,method,返回所有键
+dict.values,method,返回所有值
+dict.items,method,返回所有键值对
+dict.pop,method,删除并返回指定键的值
+dict.popitem,method,删除并返回任意键值对
+dict.clear,method,清空字典
+dict.update,method,更新字典
+dict.copy,method,创建字典的浅拷贝
+dict.setdefault,method,设置默认值
+# 集合方法
+set.add,method,添加元素到集合
+set.remove,method,删除集合中的元素
+set.discard,method,删除集合中的元素（不存在不报错）
+set.pop,method,删除并返回任意元素
+set.clear,method,清空集合
+set.copy,method,创建集合的浅拷贝
+set.union,method,返回并集
+set.intersection,method,返回交集
+set.difference,method,返回差集
+set.symmetric_difference,method,返回对称差集
+set.issubset,method,检查是否为子集
+set.issuperset,method,检查是否为超集
+set.isdisjoint,method,检查是否无交集
+# 常用代码模板
+if __name__ == '__main__':,template,主程序入口检查
+for i in range():,template,for循环遍历数字
+for item in items:,template,for循环遍历列表
+for key in dict:,template,for循环遍历字典键
+for key, value in dict.items():,template,for循环遍历字典键值对
+for i, item in enumerate():,template,for循环带索引遍历
+while True:,template,无限循环
+while condition:,template,条件循环
+try:,template,异常处理开始
+except Exception as e:,template,异常捕获
+except ValueError:,template,值错误异常捕获
+except KeyError:,template,键错误异常捕获
+except IndexError:,template,索引错误异常捕获
+except TypeError:,template,类型错误异常捕获
+finally:,template,最终执行块
+with open() as f:,template,文件操作上下文管理器
+with open('file.txt', 'r') as f:,template,读取文件模板
+with open('file.txt', 'w') as f:,template,写入文件模板
+def function_name():,template,函数定义模板
+def function_name(param):,template,带参数函数定义模板
+def function_name(*args):,template,可变参数函数定义模板
+def function_name(**kwargs):,template,可变关键字参数函数定义模板
+class ClassName:,template,类定义模板
+class ClassName(ParentClass):,template,继承类定义模板
+@property,template,属性装饰器
+@staticmethod,template,静态方法装饰器
+@classmethod,template,类方法装饰器
+lambda x:,template,匿名函数模板
+list comprehension,template,[x for x in iterable]
+dict comprehension,template,{k: v for k, v in iterable}
+set comprehension,template,{x for x in iterable}
+generator expression,template,(x for x in iterable)
+# 常用异常类
+Exception,class,异常基类
+ValueError,class,值错误异常
+TypeError,class,类型错误异常
+KeyError,class,键错误异常
+IndexError,class,索引错误异常
+AttributeError,class,属性错误异常
+NameError,class,名称错误异常
+FileNotFoundError,class,文件未找到异常
+ImportError,class,导入错误异常
+ModuleNotFoundError,class,模块未找到异常
+RuntimeError,class,运行时错误异常
+NotImplementedError,class,未实现错误异常
+ZeroDivisionError,class,除零错误异常
+OverflowError,class,溢出错误异常
+MemoryError,class,内存错误异常
+StopIteration,class,停止迭代异常
+# 特殊方法
+__init__,method,初始化方法
+__str__,method,字符串表示方法
+__repr__,method,对象表示方法
+__len__,method,长度方法
+__getitem__,method,获取项方法
+__setitem__,method,设置项方法
+__delitem__,method,删除项方法
+__iter__,method,迭代器方法
+__next__,method,下一个方法
+__enter__,method,进入上下文管理器
+__exit__,method,退出上下文管理器
+__call__,method,可调用对象方法
+__eq__,method,相等比较方法
+__lt__,method,小于比较方法
+__gt__,method,大于比较方法
+__le__,method,小于等于比较方法
+__ge__,method,大于等于比较方法
+__ne__,method,不等于比较方法
+__add__,method,加法运算方法
+__sub__,method,减法运算方法
+__mul__,method,乘法运算方法
+__div__,method,除法运算方法
+__mod__,method,取模运算方法
+__pow__,method,幂运算方法
+# 常用编程概念和术语
+algorithm,keyword,算法
+data_structure,keyword,数据结构
+variable,keyword,变量
+function,keyword,函数
+method,keyword,方法
+class,keyword,类
+object,keyword,对象
+instance,keyword,实例
+inheritance,keyword,继承
+polymorphism,keyword,多态
+encapsulation,keyword,封装
+abstraction,keyword,抽象
+interface,keyword,接口
+module,keyword,模块
+package,keyword,包
+library,keyword,库
+framework,keyword,框架
+api,keyword,应用程序接口
+sdk,keyword,软件开发工具包
+ide,keyword,集成开发环境
+compiler,keyword,编译器
+interpreter,keyword,解释器
+debugger,keyword,调试器
+profiler,keyword,性能分析器
+unittest,keyword,单元测试
+integration_test,keyword,集成测试
+regression_test,keyword,回归测试
+refactoring,keyword,重构
+optimization,keyword,优化
+performance,keyword,性能
+scalability,keyword,可扩展性
+maintainability,keyword,可维护性
+readability,keyword,可读性
+documentation,keyword,文档
+comment,keyword,注释
+version_control,keyword,版本控制
+git,keyword,Git版本控制系统
+repository,keyword,仓库
+commit,keyword,提交
+branch,keyword,分支
+merge,keyword,合并
+pull_request,keyword,拉取请求
+code_review,keyword,代码审查
+continuous_integration,keyword,持续集成
+deployment,keyword,部署
+production,keyword,生产环境
+development,keyword,开发环境
+testing,keyword,测试环境
+staging,keyword,预发布环境
+database,keyword,数据库
+sql,keyword,结构化查询语言
+nosql,keyword,非关系型数据库
+orm,keyword,对象关系映射
+migration,keyword,数据库迁移
+backup,keyword,备份
+restore,keyword,恢复
+cache,keyword,缓存
+session,keyword,会话
+cookie,keyword,Cookie
+authentication,keyword,身份验证
+authorization,keyword,授权
+encryption,keyword,加密
+decryption,keyword,解密
+hash,keyword,哈希
+salt,keyword,盐值
+token,keyword,令牌
+jwt,keyword,JSON Web Token
+oauth,keyword,开放授权
+ssl,keyword,安全套接字层
+https,keyword,安全超文本传输协议
+rest,keyword,表述性状态传递
+soap,keyword,简单对象访问协议
+json,keyword,JavaScript对象表示法
+xml,keyword,可扩展标记语言
+yaml,keyword,YAML标记语言
+csv,keyword,逗号分隔值
+# 常用数据结构术语
+array,keyword,数组
+list,keyword,列表
+tuple,keyword,元组
+dictionary,keyword,字典
+hash_table,keyword,哈希表
+set,keyword,集合
+queue,keyword,队列
+stack,keyword,栈
+heap,keyword,堆
+tree,keyword,树
+binary_tree,keyword,二叉树
+graph,keyword,图
+linked_list,keyword,链表
+doubly_linked_list,keyword,双向链表
+circular_list,keyword,循环链表
+priority_queue,keyword,优先队列
+deque,keyword,双端队列
+# 算法相关术语
+sorting,keyword,排序
+searching,keyword,搜索
+recursion,keyword,递归
+iteration,keyword,迭代
+divide_and_conquer,keyword,分而治之
+dynamic_programming,keyword,动态规划
+greedy_algorithm,keyword,贪心算法
+backtracking,keyword,回溯
+breadth_first_search,keyword,广度优先搜索
+depth_first_search,keyword,深度优先搜索
+binary_search,keyword,二分搜索
+linear_search,keyword,线性搜索
+bubble_sort,keyword,冒泡排序
+quick_sort,keyword,快速排序
+merge_sort,keyword,归并排序
+insertion_sort,keyword,插入排序
+selection_sort,keyword,选择排序
+heap_sort,keyword,堆排序
+# 设计模式
+design_pattern,keyword,设计模式
+singleton,keyword,单例模式
+factory,keyword,工厂模式
+observer,keyword,观察者模式
+decorator,keyword,装饰器模式
+adapter,keyword,适配器模式
+facade,keyword,外观模式
+proxy,keyword,代理模式
+command,keyword,命令模式
+strategy,keyword,策略模式
+template_method,keyword,模板方法模式
+mvc,keyword,模型-视图-控制器
+mvp,keyword,模型-视图-展示器
+mvvm,keyword,模型-视图-视图模型
+# 软件工程术语
+requirements,keyword,需求
+specification,keyword,规格说明
+architecture,keyword,架构
+design,keyword,设计
+implementation,keyword,实现
+testing,keyword,测试
+maintenance,keyword,维护
+agile,keyword,敏捷开发
+scrum,keyword,Scrum方法
+kanban,keyword,看板方法
+waterfall,keyword,瀑布模型
+devops,keyword,开发运维一体化
+ci_cd,keyword,持续集成持续部署
+microservices,keyword,微服务
+monolith,keyword,单体应用
+serverless,keyword,无服务器
+cloud_computing,keyword,云计算
+docker,keyword,Docker容器
+kubernetes,keyword,Kubernetes容器编排
+# 网络编程术语
+socket,keyword,套接字
+tcp,keyword,传输控制协议
+udp,keyword,用户数据报协议
+http,keyword,超文本传输协议
+ftp,keyword,文件传输协议
+smtp,keyword,简单邮件传输协议
+dns,keyword,域名系统
+ip_address,keyword,IP地址
+port,keyword,端口
+firewall,keyword,防火墙
+proxy,keyword,代理服务器
+load_balancer,keyword,负载均衡器
+# 数据库术语
+table,keyword,表
+row,keyword,行
+column,keyword,列
+primary_key,keyword,主键
+foreign_key,keyword,外键
+index,keyword,索引
+transaction,keyword,事务
+acid,keyword,原子性一致性隔离性持久性
+join,keyword,连接
+inner_join,keyword,内连接
+left_join,keyword,左连接
+right_join,keyword,右连接
+union,keyword,联合
+subquery,keyword,子查询
+stored_procedure,keyword,存储过程
+trigger,keyword,触发器
+view,keyword,视图
+normalization,keyword,规范化
+denormalization,keyword,反规范化
+# 常用英文编程词汇
+create,keyword,创建
+read,keyword,读取
+update,keyword,更新
+delete,keyword,删除
+insert,keyword,插入
+select,keyword,选择
+search,keyword,搜索
+find,keyword,查找
+filter,keyword,过滤
+sort,keyword,排序
+group,keyword,分组
+count,keyword,计数
+sum,keyword,求和
+average,keyword,平均值
+minimum,keyword,最小值
+maximum,keyword,最大值
+first,keyword,第一个
+last,keyword,最后一个
+next,keyword,下一个
+previous,keyword,上一个
+begin,keyword,开始
+end,keyword,结束
+start,keyword,启动
+stop,keyword,停止
+pause,keyword,暂停
+resume,keyword,恢复
+reset,keyword,重置
+clear,keyword,清除
+empty,keyword,空的
+full,keyword,满的
+valid,keyword,有效的
+invalid,keyword,无效的
+active,keyword,活跃的
+inactive,keyword,非活跃的
+enabled,keyword,启用的
+disabled,keyword,禁用的
+visible,keyword,可见的
+hidden,keyword,隐藏的
+public,keyword,公共的
+private,keyword,私有的
+protected,keyword,受保护的
+static,keyword,静态的
+dynamic,keyword,动态的
+async,keyword,异步的
+sync,keyword,同步的
+callback,keyword,回调
+promise,keyword,承诺
+await,keyword,等待
+thread,keyword,线程
+process,keyword,进程
+lock,keyword,锁
+mutex,keyword,互斥锁
+semaphore,keyword,信号量
+deadlock,keyword,死锁
+race_condition,keyword,竞态条件
+# 文件操作术语
+file,keyword,文件
+directory,keyword,目录
+folder,keyword,文件夹
+path,keyword,路径
+filename,keyword,文件名
+extension,keyword,扩展名
+size,keyword,大小
+permissions,keyword,权限
+owner,keyword,所有者
+group,keyword,组
+timestamp,keyword,时间戳
+creation_time,keyword,创建时间
+modification_time,keyword,修改时间
+access_time,keyword,访问时间
+# 错误处理术语
+error,keyword,错误
+exception,keyword,异常
+warning,keyword,警告
+debug,keyword,调试
+trace,keyword,跟踪
+log,keyword,日志
+logging,keyword,日志记录
+stack_trace,keyword,堆栈跟踪
+breakpoint,keyword,断点
+watchpoint,keyword,观察点
+# 性能相关术语
+benchmark,keyword,基准测试
+profiling,keyword,性能分析
+bottleneck,keyword,瓶颈
+latency,keyword,延迟
+throughput,keyword,吞吐量
+bandwidth,keyword,带宽
+memory_usage,keyword,内存使用
+cpu_usage,keyword,CPU使用率
+disk_usage,keyword,磁盘使用
+network_usage,keyword,网络使用
+garbage_collection,keyword,垃圾回收
+memory_leak,keyword,内存泄漏
+buffer_overflow,keyword,缓冲区溢出
